@@ -1,0 +1,21 @@
+<h2>Fill class details</h2>
+{{#if errors}}
+			{{#each errors}}
+				<div class="notice error"><i class="icon-remove-sign icon-large"></i> {{msg}}
+				<a href="#close" class="icon-remove"></a></div>
+			{{/each}}
+		{{/if}}
+<form id="regForm" method="post" action="/admin/classes/register">
+
+	<div>
+		<label>class title: </label>
+		<input type="text" name="class_title">
+	</div><br />
+	<div>
+		<label>class description: </label>
+		<input type="text" name="class_description">
+	</div><br />
+	
+		<input type="submit" value="Add Class">
+	</div>
+</form>
